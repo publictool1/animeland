@@ -1,0 +1,442 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+}
+
+.fon {
+    position: relative;
+}
+
+.fon img {
+    width: 100%;
+}   
+
+.text {
+    position: absolute;
+    top: 5%;
+    left: 47%;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.text a {
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+}
+
+.text a:hover {
+    text-decoration: underline;
+    transform: translateY(30px);
+    transition: 2s;
+}
+
+
+.card__containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 100px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 49%;
+    margin-top: 100px;
+    transform: translateY(60px);
+    transition: 2s;
+}
+
+.card-container:hover {
+    border-bottom: 3px solid black;
+    transform: translateY(-60px);
+    transition: 2s;
+}
+
+.card-discr {
+    padding: 0px 100px;
+}
+
+.title__anime {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.title-elements {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.title-img {
+    position: relative;
+}
+
+.cart__num {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.title-img {
+    margin-left: 50px;
+    transition: 1s; 
+}
+
+.title-img:hover {
+    transform: translateY(-25px);
+    transition: 1s; 
+}
+
+.title-img img {
+    width: 50px;
+}
+
+.card-image {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.card-image img {
+    width: 25%;
+} 
+
+#buy {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 12px;
+    width: 30%;
+    color: white;
+    background-color: black;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.card__button {
+    margin: 10px;
+}
+
+
+.container {
+    margin: 30px auto;
+    background: #f1f1f1;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0px;
+    text-transform: uppercase;
+}
+
+button {
+    background: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:active {
+    background: #000;
+    color: #fff;
+}
+
+.slider {
+    max-width: 40%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-text p {
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+
+.slider-line {
+    width: 1024px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slider-next {
+    float: right;
+}
+
+#wrapper {
+    margin-top: 150px;
+}
+
+.modal__container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__content {
+    width: 100%;
+}
+
+.modal__content img  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}
+
+.basket__container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.basket__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 700px;
+    background-color: #ffffff;
+}
+
+.popup__close {
+    float: right;
+}
+
+.order__button {
+    text-align: center;
+    margin: 100px auto;
+}
+
+#order {
+    text-transform: uppercase;
+    padding: 10px 22px;
+    transform: translateY(15px);
+    transition: 1s; 
+    border: none;
+    font-size: 20px;
+}
+
+#order:hover {
+    transform: translateY(-15px);
+    transition: 1s; 
+    border-bottom: 2px solid black;
+}
+
+.order__modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.order__wrapper { 
+    background-color: #f1f1f1;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__order form{
+    margin: 30px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#figure {
+    padding: 7px 12px;
+}
+
+.order__image {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.order__image img {
+    width: 30%;
+} 
+
+.first__basket {
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.card-containerqqq {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card-containerqqq img {
+    width: 25%;
+}
+
+.card-containerqqq .card-image {
+    padding: 0px;
+}
+
+.aaaaaaaaaaaaaaaaaaaaa {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    height: 100%;
+}
+
+.links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.git__link img {
+    width: 50px;
+    height: 50px;
+}
+
+.git__link {
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.git__link:hover {
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .text {
+        top: 0;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .card-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .text {
+        left: 43%;
+        font-size: 15px;
+    }
+
+    .card-discr {
+        padding: 0px;
+    }
+
+    .card-image img {
+        width: 40%;
+    }
+
+    .first {
+        display: none;
+    }
+
+    .basket__content {
+        width: 480px;
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .card-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .card__containers {
+        padding: 0px;
+    }
+
+    .text {
+        top: 0;
+        left: 45%;
+    }
+
+    .first {
+        display: none;
+    }
+
+    .text h1 {
+        font-size: 15px;
+        margin: 0px;
+    }
+    
+    .text {
+        left: 42%;
+        top: 1%;
+    }
+
+    .card-discr {
+        padding: 0px;
+    }
+
+    .card-image img {
+        width: 60%;
+    }
+
+    .slider-text {
+        display: none;
+    }
+
+    .title__anime {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .basket__content {
+        width: 370px;
+        height: 850px;
+    }
+}
