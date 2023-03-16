@@ -541,6 +541,7 @@ button:active {
     }
 
     .burger__content li {
+        text-align: left;
         font-size: 22px;
     }
 }

@@ -1,164 +1,164 @@
-const openBasket = document.getElementById('openBasket');
-const basketModal = document.getElementById('basketContent');
-const basket = document.getElementById('basket');
-const buyItachi = document.getElementById('buy');
-const buyNaruto = document.getElementById('buyN');
-const buyAlch = document.getElementById('buyA');
-const buySasuke = document.getElementById('buyS');
-const buyBib = document.getElementById('buyB');
-const buyMai = document.getElementById('buyM');
+// const openBasket = document.getElementById('openBasket');
+// const basketModal = document.getElementById('basketContent');
+// const basket = document.getElementById('basket');
+// const buyItachi = document.getElementById('buy');
+// const buyNaruto = document.getElementById('buyN');
+// const buyAlch = document.getElementById('buyA');
+// const buySasuke = document.getElementById('buyS');
+// const buyBib = document.getElementById('buyB');
+// const buyMai = document.getElementById('buyM');
+
+// openBasket.onclick = function() {
+//     basket.style.display = 'block';
+// };
+
+// window.onclick = function(event) {
+//     if (event.target == basket) {
+//       basket.style.display = "none";
+//     }
+// };
 
 
 
-openBasket.onclick = function() {
-    basket.style.display = 'block';
-};
+// buyItachi.addEventListener('click', (e) => {
 
-window.onclick = function(event) {
-    if (event.target == basket) {
-      basket.style.display = "none";
-    }
-  };
+//     e.preventDefault();
+//     let nameI = document.getElementById('nameItachi').textContent;
+//     let priceI = document.getElementById('priceItachi').textContent;
+//     let imageI = document.querySelector('.card-image img').src;
 
-buyItachi.addEventListener('click', (e) => {
+//     let newDiv = document.createElement('div');
+//     let newPrice = document.createElement('p');
+//     let newName = document.createElement('p');
+//     let imageItachi = document.createElement('img');
 
-    e.preventDefault();
-    let nameI = document.getElementById('nameItachi').textContent;
-    let priceI = document.getElementById('priceItachi').textContent;
-    let imageI = document.querySelector('.card-image img').src;
+//     newName.innerText = nameI;
+//     newPrice.innerText = priceI;
+//     imageItachi.src = imageI;
 
-    let newDiv = document.createElement('div');
-    let newPrice = document.createElement('p');
-    let newName = document.createElement('p');
-    let imageItachi = document.createElement('img');
+//     newDiv.appendChild(imageItachi);
+//     newDiv.appendChild(newName);
+//     newDiv.appendChild(newPrice);
+//     newDiv.classList.add('basket__add');
+//     basketModal.appendChild(newDiv);
+// });
 
-    newName.innerText = nameI;
-    newPrice.innerText = priceI;
-    imageItachi.src = imageI;
+// buyNaruto.addEventListener('click', (e) => {
 
-    newDiv.appendChild(imageItachi);
-    newDiv.appendChild(newName);
-    newDiv.appendChild(newPrice);
-    newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
-});
+//     e.preventDefault();
+//     let name = document.getElementById('nameNaruto').textContent;
+//     let price = document.getElementById('priceNaruto').textContent;
+//     let image = document.querySelector('.card-image-naruto img').src;
 
-buyNaruto.addEventListener('click', (e) => {
+//     let newDiv = document.createElement('div');
+//     let newPrice = document.createElement('p');
+//     let newName = document.createElement('p');
+//     let imageNaruto = document.createElement('img');
 
-    e.preventDefault();
-    let name = document.getElementById('nameNaruto').textContent;
-    let price = document.getElementById('priceNaruto').textContent;
-    let image = document.querySelector('.card-image-naruto img').src;
+//     newName.innerText = name;
+//     newPrice.innerText = price;
+//     imageNaruto.src = image;
 
-    let newDiv = document.createElement('div');
-    let newPrice = document.createElement('p');
-    let newName = document.createElement('p');
-    let imageNaruto = document.createElement('img');
+//     newDiv.appendChild(imageNaruto);
+//     newDiv.appendChild(newName);
+//     newDiv.appendChild(newPrice);
 
-    newName.innerText = name;
-    newPrice.innerText = price;
-    imageNaruto.src = image;
+//     newDiv.classList.add('basket__add');
+//     basketModal.appendChild(newDiv);
+// });
 
-    newDiv.appendChild(imageNaruto);
-    newDiv.appendChild(newName);
-    newDiv.appendChild(newPrice);
+// buyAlch.addEventListener('click', (e) => {
 
-    newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
-});
+//     e.preventDefault();
+//     let name = document.getElementById('nameAlch').textContent;
+//     let price = document.getElementById('priceAlch').textContent;
+//     let image = document.querySelector('.card-image-alch img').src;
 
-buyAlch.addEventListener('click', (e) => {
+//     let newDiv = document.createElement('div');
+//     let newPrice = document.createElement('p');
+//     let newName = document.createElement('p');
+//     let imageAlch = document.createElement('img');
 
-    e.preventDefault();
-    let name = document.getElementById('nameAlch').textContent;
-    let price = document.getElementById('priceAlch').textContent;
-    let image = document.querySelector('.card-image-alch img').src;
+//     newName.innerText = name;
+//     newPrice.innerText = price;
+//     imageAlch.src = image;
 
-    let newDiv = document.createElement('div');
-    let newPrice = document.createElement('p');
-    let newName = document.createElement('p');
-    let imageAlch = document.createElement('img');
+//     newDiv.appendChild(imageAlch);
+//     newDiv.appendChild(newName);
+//     newDiv.appendChild(newPrice);
 
-    newName.innerText = name;
-    newPrice.innerText = price;
-    imageAlch.src = image;
+//     newDiv.classList.add('basket__add');
+//     basketModal.appendChild(newDiv);
+// });
 
-    newDiv.appendChild(imageAlch);
-    newDiv.appendChild(newName);
-    newDiv.appendChild(newPrice);
+// buySasuke.addEventListener('click', (e) => {
 
-    newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
-});
+//     e.preventDefault();
+//     let name = document.getElementById('nameSas').textContent;
+//     let price = document.getElementById('priceSas').textContent;
+//     let image = document.querySelector('.card-image-sasuke img').src;
 
-buySasuke.addEventListener('click', (e) => {
+//     let newDiv = document.createElement('div');
+//     let newPrice = document.createElement('p');
+//     let newName = document.createElement('p');
+//     let imageSasuke = document.createElement('img');
 
-    e.preventDefault();
-    let name = document.getElementById('nameSas').textContent;
-    let price = document.getElementById('priceSas').textContent;
-    let image = document.querySelector('.card-image-sasuke img').src;
+//     newName.innerText = name;
+//     newPrice.innerText = price;
+//     imageSasuke.src = image;
 
-    let newDiv = document.createElement('div');
-    let newPrice = document.createElement('p');
-    let newName = document.createElement('p');
-    let imageSasuke = document.createElement('img');
+//     newDiv.appendChild(imageSasuke);
+//     newDiv.appendChild(newName);
+//     newDiv.appendChild(newPrice);
 
-    newName.innerText = name;
-    newPrice.innerText = price;
-    imageSasuke.src = image;
+//     newDiv.classList.add('basket__add');
+//     basketModal.appendChild(newDiv);
+// });
 
-    newDiv.appendChild(imageSasuke);
-    newDiv.appendChild(newName);
-    newDiv.appendChild(newPrice);
+// buyBib.addEventListener('click', (e) => {
 
-    newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
-});
+//     e.preventDefault();
+//     let name = document.getElementById('nameBib').textContent;
+//     let price = document.getElementById('priceBib').textContent;
+//     let image = document.querySelector('.card-image-bib img').src;
 
-buyBib.addEventListener('click', (e) => {
+//     let newDiv = document.createElement('div');
+//     let newPrice = document.createElement('p');
+//     let newName = document.createElement('p');
+//     let imageBibop = document.createElement('img');
 
-    e.preventDefault();
-    let name = document.getElementById('nameBib').textContent;
-    let price = document.getElementById('priceBib').textContent;
-    let image = document.querySelector('.card-image-bib img').src;
-
-    let newDiv = document.createElement('div');
-    let newPrice = document.createElement('p');
-    let newName = document.createElement('p');
-    let imageBibop = document.createElement('img');
-
-    imageBibop.src = image;
-    newName.innerText = name;
-    newPrice.innerText = price;
+//     imageBibop.src = image;
+//     newName.innerText = name;
+//     newPrice.innerText = price;
 
 
-    newDiv.appendChild(imageBibop);
-    newDiv.appendChild(newName);
-    newDiv.appendChild(newPrice);
-    newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
-});
+//     newDiv.appendChild(imageBibop);
+//     newDiv.appendChild(newName);
+//     newDiv.appendChild(newPrice);
+//     newDiv.classList.add('basket__add');
+//     basketModal.appendChild(newDiv);
+// });
 
-buyMai.addEventListener('click', (e) => {
+// buyMai.addEventListener('click', (e) => {
 
-    e.preventDefault();
-    let name = document.getElementById('nameMai').textContent;
-    let price = document.getElementById('priceMai').textContent;
-    let image = document.querySelector('.card-image-mai img').src;
+//     e.preventDefault();
+//     let name = document.getElementById('nameMai').textContent;
+//     let price = document.getElementById('priceMai').textContent;
+//     let image = document.querySelector('.card-image-mai img').src;
 
-    let newDiv = document.createElement('div');
-    let newPrice = document.createElement('p');
-    let newName = document.createElement('p');
-    let imageMai = document.createElement('img');
+//     let newDiv = document.createElement('div');
+//     let newPrice = document.createElement('p');
+//     let newName = document.createElement('p');
+//     let imageMai = document.createElement('img');
 
-    newName.innerText = name;
-    newPrice.innerText = price;
-    imageMai.src = image;
+//     newName.innerText = name;
+//     newPrice.innerText = price;
+//     imageMai.src = image;
 
-    newDiv.appendChild(imageMai);
-    newDiv.appendChild(newName);
-    newDiv.appendChild(newPrice);
+//     newDiv.appendChild(imageMai);
+//     newDiv.appendChild(newName);
+//     newDiv.appendChild(newPrice);
 
-    newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
-});
+//     newDiv.classList.add('basket__add');
+//     basketModal.appendChild(newDiv);
+// });
