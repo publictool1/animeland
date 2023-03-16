@@ -15,6 +15,11 @@ const buySasuke = document.getElementById('buyS');
 const buyBib = document.getElementById('buyB');
 const buyMai = document.getElementById('buyM');
 
+const closeBasket = document.getElementById('closeBasket');
+const newContent = document.getElementById('newContent');
+
+const cartNum = document.getElementById('cartNum');
+
 
 let count = 0;
 let width;
@@ -30,6 +35,10 @@ window.onclick = function(event) {
 
 openBasket.onclick = function() {
     basket.style.display = 'block';
+};
+
+closeBasket.onclick = function() {
+    basket.style.display = 'none';
 };
 
 
@@ -58,7 +67,9 @@ buyItachi.addEventListener('click', (e) => {
     newDiv.appendChild(newName);
     newDiv.appendChild(newPrice);
     newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
+    newContent.appendChild(newDiv);
+    count++;
+    cartNum.innerText = count;
 });
 
 buyNaruto.addEventListener('click', (e) => {
@@ -82,7 +93,9 @@ buyNaruto.addEventListener('click', (e) => {
     newDiv.appendChild(newPrice);
 
     newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
+    newContent.appendChild(newDiv);
+    count++;
+    cartNum.innerText = count;
 });
 
 buyAlch.addEventListener('click', (e) => {
@@ -106,7 +119,9 @@ buyAlch.addEventListener('click', (e) => {
     newDiv.appendChild(newPrice);
 
     newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
+    newContent.appendChild(newDiv);
+    count++;
+    cartNum.innerText = count;
 });
 
 buySasuke.addEventListener('click', (e) => {
@@ -130,7 +145,9 @@ buySasuke.addEventListener('click', (e) => {
     newDiv.appendChild(newPrice);
 
     newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
+    newContent.appendChild(newDiv);
+    count++;
+    cartNum.innerText = count;
 });
 
 buyBib.addEventListener('click', (e) => {
@@ -154,7 +171,9 @@ buyBib.addEventListener('click', (e) => {
     newDiv.appendChild(newName);
     newDiv.appendChild(newPrice);
     newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
+    newContent.appendChild(newDiv);
+    count++;
+    cartNum.innerText = count;
 });
 
 buyMai.addEventListener('click', (e) => {
@@ -178,7 +197,9 @@ buyMai.addEventListener('click', (e) => {
     newDiv.appendChild(newPrice);
 
     newDiv.classList.add('basket__add');
-    basketModal.appendChild(newDiv);
+    newContent.appendChild(newDiv); 
+    count++;
+    cartNum.innerText = count;
 });
 
 function init() {

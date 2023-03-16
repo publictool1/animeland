@@ -475,7 +475,50 @@ button:active {
 
 .basket__add img {
     width: 20%;
+}
+
+.basket__content {
+ position: relative;   
+}
+
+.basket__content h2 {
+    text-align: center;
+    margin: 15px;
+}
+
+.basket__content a {
+    position: absolute;
+    left: 90%;
+    top: 2%;
 } 
+
+/* .basket__content img {
+    width: 35px;
+    height: 35px;
+} */
+
+#basketImage {
+    width: 35px;
+    height: 35px;
+}
+
+.basket__button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* height: 87%; */
+    margin: 40px;
+}
+
+#basketOrder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 12px;
+    width: 60%;
+    color: white;
+    background-color: black;
+    cursor: pointer;;
+}
 
 @media screen and (max-width: 1000px) {
     .card-container {
@@ -544,6 +587,10 @@ button:active {
         text-align: left;
         font-size: 22px;
     }
+
+    .basket__content a {
+        left: 85%;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -594,8 +641,8 @@ button:active {
     }
 
     .basket__content {
-        left: 30%;
-        width: 250px;
+        left: 35%;
+        width: 330px;
         height: 100%;
     }
 
