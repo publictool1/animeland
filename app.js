@@ -13,8 +13,8 @@ const alchimic = document.getElementById('alchimic');
 const saske = document.getElementById('saske');
 const bibop = document.getElementById('bibop');
 const mai = document.getElementById('mai');
-const basket = document.getElementById('basket');
-const openBasket = document.getElementById('openBasket');
+// const basket = document.getElementById('basket');
+// const openBasket = document.getElementById('openBasket');
 const openSS = document.getElementById('firstCon');
 const all = document.getElementById('all');
 
@@ -45,11 +45,6 @@ alchimic.onclick = function() {
     modalAlch.style.display = "block";
 };
 
-openBasket.onclick = function() {
-    basket.style.display = 'block';
-};
-
-
 window.onclick = function(event) {
     if (event.target == modalIta) {
         modalIta.style.display = "none";
@@ -75,9 +70,7 @@ window.onclick = function(event) {
         modalSas.style.display = "none";
     }
 
-    if (event.target == basket) {
-        basket.style.display = "none";
-    }
+
 };
 
 function init() {
